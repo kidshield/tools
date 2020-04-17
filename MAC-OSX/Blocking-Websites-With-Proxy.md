@@ -19,13 +19,17 @@ Install [Nodejs](https://nodejs.org/en/download/)
 
 Create a rules file, more details on how to [here](http://anyproxy.io/en/#rule-samples) 
 
-    vi ~/.rules
+    vi ~/.rules.js
 
 
 [http://anyproxy.io/en/#modify-the-request-target] is the rule I used as a sample and [this](https://gist.github.com/csanz/e7e203b6dd252d49c61da8e1f3bb0360) is the one I'm currently using and modifying. 
 
+Then you start any proxy with the rules and turn on the Proxy on host mac. 
+
+    anyproxy --rule ~/.rules.js
 
 
+## More info on Networking
 
 You simply just use the `networksetup` command. You can find the params you need to you this way
 
